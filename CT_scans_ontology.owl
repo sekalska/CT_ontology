@@ -1,0 +1,834 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/sekalska/CT_scans_ontology#"
+     xml:base="https://github.com/sekalska/CT_scans_ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:snomed="http://purl.bioontology.org/ontology/SNOMEDCT/"
+     xmlns:LOINC="http://purl.bioontology.org/ontology/LNC/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://github.com/sekalska/CT_scans_ontology">
+        <owl:versionIRI rdf:resource="https://github.com/sekalska/CT_scans_ontology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/sekalska/CT_scans_ontology#performs -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/sekalska/CT_scans_ontology#performs">
+        <rdfs:domain rdf:resource="https://github.com/sekalska/CT_scans_ontology#Medical_radiation_technologist"/>
+        <rdfs:range rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/sekalska/CT_scans_ontology#visit -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/sekalska/CT_scans_ontology#visit">
+        <rdfs:domain rdf:resource="https://github.com/sekalska/CT_scans_ontology#Patient"/>
+        <rdfs:range rdf:resource="https://github.com/sekalska/CT_scans_ontology#Hospital"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/sekalska/CT_scans_ontology#HIE -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/sekalska/CT_scans_ontology#HIE">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/sekalska/CT_scans_ontology#age -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/sekalska/CT_scans_ontology#age">
+        <rdfs:domain rdf:resource="https://github.com/sekalska/CT_scans_ontology#Patient"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/sekalska/CT_scans_ontology#id -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/sekalska/CT_scans_ontology#id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/sekalska/CT_scans_ontology#location -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/sekalska/CT_scans_ontology#location">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/sekalska/CT_scans_ontology#Hospital"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/sekalska/CT_scans_ontology#name -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/sekalska/CT_scans_ontology#name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/24627-2 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/24627-2">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Chest CT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/24628-0 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/24628-0">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Chest CT W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/24696-7 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/24696-7">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Facial bones CT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/24725-4 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/24725-4">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Head CT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/24726-2 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/24726-2">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Head CT WO and W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/24727-0 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/24727-0">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Head CT W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/24823-7 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/24823-7">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">CT Guidance for biopsy of Lung</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/24865-8 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/24865-8">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Pelvis CT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/24866-6 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/24866-6">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Pelvis CT W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/24932-6 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/24932-6">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Cervical spine CT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/24933-4 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/24933-4">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Cervical spine CT W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/24963-1 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/24963-1">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lumbar spine CT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/24964-9 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/24964-9">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lumbar spine CT W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/24978-9 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/24978-9">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Thoracic spine CT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/24979-7 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/24979-7">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Thoracic spine CT W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/25045-6 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/25045-6">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Unspecified body region CT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/29252-4 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/29252-4">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Chest CT WO contrast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/30586-2 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/30586-2">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Neck CT WO and W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/30588-8 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/30588-8">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Sinuses CT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/30592-0 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/30592-0">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Cervical spine CT WO contrast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/30593-8 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/30593-8">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Head vessels CT angiogram WO and W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/30594-6 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/30594-6">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Neck vessels CT angiogram WO and W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/30597-9 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/30597-9">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Thoracic spine CT WO contrast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/30598-7 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/30598-7">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Chest CT WO and W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/30615-9 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/30615-9">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Pelvis CT WO contrast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/30620-9 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/30620-9">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lumbar spine CT WO contrast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/30623-3 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/30623-3">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Pelvis vessels CT angiogram WO and W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/30624-1 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/30624-1">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lower extremity CT W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/30625-8 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/30625-8">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lower extremity CT WO contrast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/30799-1 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/30799-1">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/LNC/30799-1"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Head CT WO contrast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/30802-3 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/30802-3">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Maxillofacial region CT WO contrast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/30804-9 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/30804-9">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Chest vessels CT angiogram WO and W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/30805-6 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/30805-6">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Abdominal vessels CT angiogram WO and W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/30807-2 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/30807-2">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lower extremity vessels CT angiogram WO and W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/35971-1 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/35971-1">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lower extremity CT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/35973-7 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/35973-7">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lower extremity - bilateral CT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/35981-0 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/35981-0">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Upper extremity CT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/36050-3 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/36050-3">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Maxilla CT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/36051-1 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/36051-1">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Neck CT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/36147-7 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/36147-7">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Pulmonary arteries CT angiogram W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/36164-2 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/36164-2">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lower extremity - left CT W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/36166-7 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/36166-7">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lower extremity - right CT W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/36170-9 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/36170-9">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Upper extremity - right CT W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/36235-0 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/36235-0">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Neck CT W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/36266-5 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/36266-5">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Chest vessels CT angiogram W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/36267-3 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/36267-3">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Abdomen CT WO and W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/36402-6 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/36402-6">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lumbar spine CT WO and W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/36424-0 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/36424-0">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Abdomen CT WO contrast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/36452-1 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/36452-1">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lower extremity - left CT WO contrast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/36454-7 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/36454-7">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lower extremity - right CT WO contrast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/36457-0 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/36457-0">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Upper extremity - left CT WO contrast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/36458-8 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/36458-8">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Upper extremity - right CT WO contrast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/36512-2 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/36512-2">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Mandible CT WO contrast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/36514-8 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/36514-8">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Neck CT WO contrast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/36529-6 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/36529-6">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Sinuses CT WO contrast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/36773-0 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/36773-0">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Temporal bone CT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/36813-4 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/36813-4">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Abdomen and Pelvis CT W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/36866-2 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/36866-2">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Temporal bone CT WO contrast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/36934-8 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/36934-8">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Heart CT for calcium scoring</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/36952-0 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/36952-0">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Abdomen and Pelvis CT WO contrast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/37441-3 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/37441-3">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Neck vessels CT angiogram WO and W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/37498-3 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/37498-3">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Head vessels and Neck vessels CT angiogram W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/41806-1 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/41806-1">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Abdomen CT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/41808-7 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/41808-7">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Maxillofacial region CT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/42274-1 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/42274-1">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Abdomen and Pelvis CT WO and W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/42277-4 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/42277-4">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Head vessels and Neck vessels CT angiogram W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/44115-4 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/44115-4">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Abdomen and Pelvis CT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/44139-4 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/44139-4">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Whole body PT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/46305-9 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/46305-9">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Whole body CT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/46331-5 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/46331-5">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Orbit CT WO contrast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/50755-8 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/50755-8">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lower extremity - bilateral CT W contrast IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/58741-0 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/58741-0">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Skull base to mid-thigh PT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/58744-4 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/58744-4">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Heart CT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/sekalska/CT_scans_ontology#CT_scan -->
+
+    <owl:Class rdf:about="https://github.com/sekalska/CT_scans_ontology#CT_scan"/>
+    
+
+
+    <!-- https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site -->
+
+    <owl:Class rdf:about="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+    
+
+
+    <!-- https://github.com/sekalska/CT_scans_ontology#CT_scan_location -->
+
+    <owl:Class rdf:about="https://github.com/sekalska/CT_scans_ontology#CT_scan_location"/>
+    
+
+
+    <!-- https://github.com/sekalska/CT_scans_ontology#CT_study_record -->
+
+    <owl:Class rdf:about="https://github.com/sekalska/CT_scans_ontology#CT_study_record"/>
+    
+
+
+    <!-- https://github.com/sekalska/CT_scans_ontology#HIE -->
+
+    <owl:Class rdf:about="https://github.com/sekalska/CT_scans_ontology#HIE"/>
+    
+
+
+    <!-- https://github.com/sekalska/CT_scans_ontology#Hospital -->
+
+    <owl:Class rdf:about="https://github.com/sekalska/CT_scans_ontology#Hospital"/>
+    
+
+
+    <!-- https://github.com/sekalska/CT_scans_ontology#Medical_proffesionals -->
+
+    <owl:Class rdf:about="https://github.com/sekalska/CT_scans_ontology#Medical_proffesionals">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#Hospital"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/sekalska/CT_scans_ontology#Medical_radiation_technologist -->
+
+    <owl:Class rdf:about="https://github.com/sekalska/CT_scans_ontology#Medical_radiation_technologist">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#Medical_proffesionals"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/sekalska/CT_scans_ontology#Patient -->
+
+    <owl:Class rdf:about="https://github.com/sekalska/CT_scans_ontology#Patient"/>
+    
+
+
+    <!-- https://github.com/sekalska/CT_scans_ontology#Physician -->
+
+    <owl:Class rdf:about="https://github.com/sekalska/CT_scans_ontology#Physician">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#Medical_proffesionals"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
