@@ -906,6 +906,7 @@ Thorax</rdfs:label>
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/69536005">
         <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#Body"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Head has Head CT W and WO contrast IV (LOINC: 24726-2)</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Head has a Head CT (LOINC: 24725-4)</rdfs:comment>
         <rdfs:comment>Head has a Head CT WO contrast (LOINC: 30799-1)</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Head has a Head vessels CT angiogram W and WO contrast IV (LOINC: 30593-8)</rdfs:comment>
@@ -923,9 +924,40 @@ Thorax</rdfs:label>
     
 
 
+    <!-- http://purl.bioontology.org/ontology/SNOMEDCT/80891009 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/80891009">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#Body"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Heart has Heart CT (LOINC: 58744-4)</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Heart</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNOMEDCT/81040000 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/81040000">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#Body"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Pulmonary artery has Pulmonary artery Narrative CT angiogram W contrast IV (LOINC: 36147-7)</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Pulmonary artery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNOMEDCT/91609006 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/91609006">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/69536005"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Mandible has Mandible CT WO contrast (LOINC: 36512-2)</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Mandible</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/sekalska/CT_scans_ontology#Body -->
 
     <owl:Class rdf:about="https://github.com/sekalska/CT_scans_ontology#Body">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Body has Narrative PET whole body (LOINC: 44139-4)</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Body has a Narrative CT whole body (LOINC: 46305-9)</rdfs:label>
     </owl:Class>
     
