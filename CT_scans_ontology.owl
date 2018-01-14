@@ -615,6 +615,7 @@
     <!-- http://purl.bioontology.org/ontology/LNC/36529-6 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/36529-6">
+        <owl:equivalentClass rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/702760009"/>
         <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Sinuses CT WO contrast</rdfs:label>
     </owl:Class>
@@ -787,7 +788,10 @@
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/113345001">
         <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#Body"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Abdomen has Abdomen CT W contrast (LOINC: 30599-5)</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Abdomen has Abdominal vessels CT angiogram W and WO contrast IV (LOINC: 30805-6)</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Abdomen has a Abdomen CT (LOINC: 41806-1)</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Abdomen has a Abdomen CT W and WO contrast IV (LOINC: 36267-3)</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Abdomen has a Abdomen and Pelvis CT (LOINC: 44115-4)</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Abdomen has a Abdomen and Pelvis CT W contrast IV (LOINC: 36813-4)</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Abdomen</rdfs:label>
@@ -798,9 +802,20 @@
     <!-- http://purl.bioontology.org/ontology/SNOMEDCT/122494005 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/122494005">
-        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#Body"/>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/421060004"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Cervical spine has a Cervical Spine CT (LOINC: 24932-6)</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Cervical spine has a Spine Cervical CT WO contrast (LOINC: 30592-0)</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Cervical spine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNOMEDCT/122495006 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/122495006">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/421060004"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Thoracic spine structure has a Spine Thoracic CT WO contrast (LOINC: 30597-9)</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Thoracic spine structure</rdfs:label>
     </owl:Class>
     
 
@@ -808,8 +823,7 @@
     <!-- http://purl.bioontology.org/ontology/SNOMEDCT/122496007 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/122496007">
-        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#Body"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lumbar spine has a Lumbar spine CT (LOINC: 24963-1)</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/421060004"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lumbar spine</rdfs:label>
     </owl:Class>
     
@@ -820,8 +834,39 @@
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/12921003">
         <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#Body"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Pelvis has Abdomen and Pelvis CT W contrast IV (LOINC: 36813-4)</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Pelvis has Pelvis CT WO Contrast (LOINC: 30615-9)</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Pelvis has a Abdomen and Pelvis CT (LOINC: 44115-4)</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Pelvis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNOMEDCT/31467002 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/31467002">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/69536005"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Base of skull structure has a Head to thigh Narrative PET (LOINC: 58741-0)</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Facial bones and Maxilla has Facial bones and Maxilla CT WO contrast (LOINC: 30802-3)</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Base of skull structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNOMEDCT/39607008 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/39607008">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#Body"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lung structure has CT Guidance for biopsy of Lung (LONC: 24823-7)</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lung structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNOMEDCT/421060004 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/421060004">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#Body"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Musculoskeletal structure of spine</rdfs:label>
     </owl:Class>
     
 
@@ -830,6 +875,7 @@
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/51185008">
         <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#Body"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Chest has Chest CT W and WO contrast IV (LOINC: 30598-7)</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Chest has a Chest CT WO Contrast (24628-0)</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Chest has a Chest vessels CT angiogram W and WO contrast IV (LOINC: 30804-9)</rdfs:comment>
         <rdfs:comment>Chest/Torax has Chest CT (LOINC: 24627-2)</rdfs:comment>
@@ -845,14 +891,26 @@ Thorax</rdfs:label>
         <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#Body"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Head has a Head CT (LOINC: 24725-4)</rdfs:comment>
         <rdfs:comment>Head has a Head CT WO contrast (LOINC: 30799-1)</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Head has a Head vessels CT angiogram W and WO contrast IV (LOINC: 30593-8)</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Head</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNOMEDCT/702760009 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/702760009">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Computed tomography of head and sinuses</rdfs:label>
     </owl:Class>
     
 
 
     <!-- https://github.com/sekalska/CT_scans_ontology#Body -->
 
-    <owl:Class rdf:about="https://github.com/sekalska/CT_scans_ontology#Body"/>
+    <owl:Class rdf:about="https://github.com/sekalska/CT_scans_ontology#Body">
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Body has a Narrative CT whole body (LOINC: 46305-9)</rdfs:label>
+    </owl:Class>
     
 
 
