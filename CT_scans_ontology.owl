@@ -814,6 +814,7 @@
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/122495006">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/421060004"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Thoracic spine has Thoracic spine CT (LOINC: 24978-9)</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Thoracic spine structure has a Spine Thoracic CT WO contrast (LOINC: 30597-9)</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Thoracic spine structure</rdfs:label>
     </owl:Class>
@@ -824,6 +825,7 @@
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/122496007">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/421060004"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lumbar spine has Spine lumbar CT WO contrast (LOINC: 30620-9)</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lumbar spine</rdfs:label>
     </owl:Class>
     
@@ -833,6 +835,7 @@
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/12921003">
         <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#Body"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Pelvis as Pelvis vessels CT angiogram W and WO contrast IV (LOINC: 30623-3)</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Pelvis has Abdomen and Pelvis CT W contrast IV (LOINC: 36813-4)</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Pelvis has Pelvis CT WO Contrast (LOINC: 30615-9)</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Pelvis has a Abdomen and Pelvis CT (LOINC: 44115-4)</rdfs:comment>
@@ -846,7 +849,9 @@
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/31467002">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/69536005"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Base of skull structure has a Head to thigh Narrative PET (LOINC: 58741-0)</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Facial bones and Maxilla has Facial bones and Maxilla CT (LOINC: 41808-7)</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Facial bones and Maxilla has Facial bones and Maxilla CT WO contrast (LOINC: 30802-3)</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Facial bones and sinuses has Facial bones and Sinuses Narrative CT (LOINC: 24696-7)</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Base of skull structure</rdfs:label>
     </owl:Class>
     
@@ -871,11 +876,23 @@
     
 
 
+    <!-- http://purl.bioontology.org/ontology/SNOMEDCT/45048000 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/45048000">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#Body"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Neck has Neck CT WO contrast (LOINC: 36514-8)</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Neck structure has Neck vessels CT angiogram W and Wo contrast IV (LOINC: 30594-6)</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Neck structure</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.bioontology.org/ontology/SNOMEDCT/51185008 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/51185008">
         <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#Body"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Chest has Chest CT W and WO contrast IV (LOINC: 30598-7)</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Chest has Chest CT high resolution WO contrast (LOINC: 37441-3)</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Chest has a Chest CT WO Contrast (24628-0)</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Chest has a Chest vessels CT angiogram W and WO contrast IV (LOINC: 30804-9)</rdfs:comment>
         <rdfs:comment>Chest/Torax has Chest CT (LOINC: 24627-2)</rdfs:comment>
