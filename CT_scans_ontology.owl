@@ -45,11 +45,30 @@
     
 
 
+    <!-- https://github.com/sekalska/CT_scans_ontology#owns -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/sekalska/CT_scans_ontology#owns">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/sekalska/CT_scans_ontology#Patient"/>
+        <rdfs:range rdf:resource="https://github.com/sekalska/CT_scans_ontology#HIE"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://github.com/sekalska/CT_scans_ontology#performs -->
 
     <owl:ObjectProperty rdf:about="https://github.com/sekalska/CT_scans_ontology#performs">
         <rdfs:domain rdf:resource="https://github.com/sekalska/CT_scans_ontology#Medical_radiation_technologist"/>
         <rdfs:range rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/sekalska/CT_scans_ontology#results_are_written -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/sekalska/CT_scans_ontology#results_are_written">
+        <rdfs:domain rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan"/>
+        <rdfs:range rdf:resource="https://github.com/sekalska/CT_scans_ontology#HIE"/>
     </owl:ObjectProperty>
     
 
@@ -74,10 +93,11 @@
     
 
 
-    <!-- https://github.com/sekalska/CT_scans_ontology#HIE -->
+    <!-- https://github.com/sekalska/CT_scans_ontology#CT_location -->
 
-    <owl:DatatypeProperty rdf:about="https://github.com/sekalska/CT_scans_ontology#HIE">
+    <owl:DatatypeProperty rdf:about="https://github.com/sekalska/CT_scans_ontology#CT_location">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan"/>
     </owl:DatatypeProperty>
     
 
@@ -95,6 +115,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/sekalska/CT_scans_ontology#id">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/sekalska/CT_scans_ontology#HIE"/>
     </owl:DatatypeProperty>
     
 
@@ -971,19 +992,9 @@ Thorax</rdfs:label>
 
     <!-- https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site -->
 
-    <owl:Class rdf:about="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
-    
-
-
-    <!-- https://github.com/sekalska/CT_scans_ontology#CT_scan_location -->
-
-    <owl:Class rdf:about="https://github.com/sekalska/CT_scans_ontology#CT_scan_location"/>
-    
-
-
-    <!-- https://github.com/sekalska/CT_scans_ontology#CT_study_record -->
-
-    <owl:Class rdf:about="https://github.com/sekalska/CT_scans_ontology#CT_study_record"/>
+    <owl:Class rdf:about="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan"/>
+    </owl:Class>
     
 
 
