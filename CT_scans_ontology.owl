@@ -25,6 +25,15 @@
     
 
 
+    <!-- https://github.com/sekalska/CT_scans_ontology#has -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/sekalska/CT_scans_ontology#has">
+        <rdfs:domain rdf:resource="https://github.com/sekalska/CT_scans_ontology#Patient"/>
+        <rdfs:range rdf:resource="https://github.com/sekalska/CT_scans_ontology#Body"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://github.com/sekalska/CT_scans_ontology#performs -->
 
     <owl:ObjectProperty rdf:about="https://github.com/sekalska/CT_scans_ontology#performs">
@@ -760,6 +769,29 @@
         <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan_body_site"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Heart CT</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNOMEDCT/51185008 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/51185008">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNOMEDCT/69536005 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/69536005">
+        <rdfs:subClassOf rdf:resource="https://github.com/sekalska/CT_scans_ontology#CT_scan"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Head</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/sekalska/CT_scans_ontology#Body -->
+
+    <owl:Class rdf:about="https://github.com/sekalska/CT_scans_ontology#Body"/>
     
 
 
